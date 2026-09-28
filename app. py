@@ -1,0 +1,17 @@
+from flask import Flask, render_template, request
+import legal_assistant
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/analyze', methods=['POST'])
+def analyze():
+    text = request.form.get('legal_text')
+    summary = legal_assistant.summarize_document(text)
+    return summary
+
+if __name__ == '__main__':
+    app.run(debug=True)
