@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legal Document AI</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Legal Document AI</h1>
+    <textarea id="legalText" placeholder="Paste your legal document here..."></textarea>
+    <button onclick="analyze()">Analyze Document</button>
+    <div id="result"></div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
