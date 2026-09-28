@@ -1,0 +1,12 @@
+# Core AI logic for Legal Document AI
+
+def summarize_document(text):
+    if not text:
+        return "Please provide legal text."
+    # Dummy AI summary logic
+    summary = f"Document Summary: This document contains {len(text.split())} words. Key clauses identified."
+    return summary
+
+def extract_clauses(text):
+    clauses = ["Confidentiality", "Payment Terms", "Termination"]
+    return clauses
